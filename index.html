@@ -5,6 +5,22 @@
     <title>formularz na rejestrację do eventu</title>
 </head>
 <body>
+    <form action="https://formspree.io/2000bit@wp.pl" method="POST">
+    <input type="text" name="fname" placeholder="imię" required><input type="text" name="lname" placeholder="nazwisko" required>
+    <input type="email" name="-replyto" placeholder="adres e-mail" required>
+    <label for="ticket">Wybierz rodzaj biletu:</label>
+    <select name="ticket" id="ticket">
+        <option value="Vip">Vip</option>
+        <option value="premium">Premium</option>
+        <option value="Normal">Normal</option>
+    </select>
+    <label> <input type="radio" name="vegan" value="tak">tak</label>
+    <label> <input type="radio" name="vegan" value="nie" checked>nie</label>
+   <label for="message">Dodatkowe uwagi:</label> <textarea name="message" id="message" ></textarea>
+   <label><input type="checkbox" name="agreement" required>
+   Wyrażam zgodę na przetwarzanie danych osobowych na potrzeby realizacji zapisów</label>
+   <input type="submit" name="Send">
+    </form>
     
 </body>
 </html>
